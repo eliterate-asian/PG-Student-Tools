@@ -1,0 +1,10 @@
+Unit 1
+    Sample 1
+    Assignment 1
+
+Unit 2
+    Sample 2
+    Lab 2
+
+
+Unit 1 Overview and Outcomes', 'Unit 1 Reading', 'Unit 1 Discussion Instructions', 'Unit 1 Learning Activities', 'Unit 1 Lab', 'Unit 1 Lab 2.1.1 Creating a Storage Account', 'Unit 1 Assignment', 'Unit 1 Seminar', 'Unit 10 Overview and Outcomes', 'Unit 10 Reading', 'Unit 10 Discussion Instructions', 'Unit 10 Learning Activities', 'Unit 10 Lab', 'Unit 10 Lab 4.4
