@@ -1,6 +1,7 @@
 import PyPDF2
 import bs4
 import os
+import re
 
 
 # INSTRUCTIONS
@@ -12,6 +13,15 @@ readydir = str(workingdir + "\\ready\\")
 ### 
 
 # 
+
+def form_extract(some_string, key):
+    broken = re.split('>|<|;|&', some_string)
+    assembled = []
+    for i in broken:
+        if key in i and i[0] == 'U' and key != i:
+            assembled.append(i)
+    return assembled
+
 def carrot_extract(some_string, key):
     cleaned_string = ''
     index = some_string.find(key)
@@ -33,6 +43,7 @@ def carrot_extract(some_string, key):
 
 
     cleaned_string = some_string[index:endex]
+
     if len(cleaned_string) > 50:
         cleaned_string = None
      
@@ -41,6 +52,7 @@ def carrot_extract(some_string, key):
 
 
 UnitsAll = []
+#Unit 1 has a space because otherwise it gets confused for Unit 10
 calico = ["Unit 1 ", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Unit 6", "Unit 7", "Unit 8", "Unit 9", "Unit 10"]
 
 # IMPORTANT. These are what tell the helper to NOT look for. you may need to change these based on how the teacher formats things
@@ -55,22 +67,24 @@ with open(str(readydir + "\\" + coursefile), 'rb') as file:
 
     file.close
 
-#print(lines)
 
 for each in calico:
     unit = []
     for line in lines:
         if each in str(line):
-            
-            tabby = carrot_extract(str(line), each)
-            if tabby == each:
-                continue
-            elif tabby not in unit:
-                print("::: ", tabby)
-                unit.append(tabby)
-    
-    UnitsAll.append(unit)
+            #option 1
+            unit = form_extract(str(line), each)
+            ###    
 
+            #option 2
+            # tabby = carrot_extract(str(line), each)
+            # if tabby == each:
+            #     continue
+            # elif tabby not in unit:
+            #     print("::: ", tabby)
+            #     unit.append(tabby)
+            ###
+    UnitsAll.append(unit)
 
 CleanUnits = []
 Final = []
