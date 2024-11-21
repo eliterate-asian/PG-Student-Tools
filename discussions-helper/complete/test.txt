@@ -1,0 +1,20 @@
+<div class=3D" d2l-discussions-topic-details-description"=
+>
+																			<div class=3D"d2l-htmlblock-untrusted"><d2l-html-block h=
+tml=3D"<p>Need help? You have come to the right place.</p>
+<p>This space is set aside for you to ask questions as if you were coming t=
+o my office.</p>
+<p>I will check the Virtual Office daily Monday through Friday and respond =
+within the next business day to questions posted over the weekend.</p>
+<p>Please post questions you have about the course below.</p>"><template sh=
+adowmode=3D"open"><!---->
+			<div class=3D" d2l-html-block-rendered "><p>Need help? You have come to =
+the right place.</p>
+<p>This space is set aside for you to ask questions as if you were coming t=
+o my office.</p>
+<p>I will check the Virtual Office daily Monday through Friday and respond =
+within the next business day to questions posted over the weekend.</p>
+<p>Please post questions you have about the course below.</p></div>
+			<!--?lit$549964399$-->
+		</template></d2l-html-block></div></div>
+																	</div>
