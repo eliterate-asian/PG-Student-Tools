@@ -1,6 +1,7 @@
 # PG-Student-Tools
-###Very cool, sometimes useful tools for PG student stuff
-####Authored by Doxa
+Very cool, sometimes useful tools for PG student stuff
+
+_Authored by Doxa_
 
 ## Keep List Maker
 Takes an mhtml file of a PG course's Grades page (only works on a PG course), and captures all noted items that have grade weight into an easier copy/paste list. I like to put this list in a Google Keep list (because you can add checkbox functionality) so it becomes a "To Do" list for the whole course.
